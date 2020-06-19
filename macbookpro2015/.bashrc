@@ -84,3 +84,14 @@ unset __conda_setup
 # <<< conda init <<<
 
 alias startcondaenv_p1='conda activate project1'
+
+
+# Hulu
+
+alias huluinstallxcodedep='brew install carthage swiftlint sourcery fastlane; ./Scripts/BuildDependencies.sh'
+
+alias hulupreparexcodeproj='./Scripts/install-sock-precommit.sh; ./Scripts/sock-sort-all-now.sh'
+
+
+
+
