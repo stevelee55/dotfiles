@@ -1,11 +1,23 @@
-#Creates python dev envrionment within the current directory
-alias createpyenv='python3 -m venv env'
+# Install python3.6.8 with pyenv.
+alias installpython368='pyenv install 3.6.8'
+
+# Creates python dev envrionment within the current directory
+alias createpyenv368='pyenv virtualenv 3.6.8 pyenv368'
 
 # Removes python dev environment in the current directory
 alias rmpyenv='rm -rf env'
 
+# Creating venv locally.
+alias createvenv='python -m venv env' 
+
 # Starts python dev environment using the current directory's 'env/'
-alias pyenv='source ./env/bin/activate'
+alias pyenvact-local='source ./env/bin/activate'
+
+# starts pyenv for the given shell.
+alias pyenvact368='pyenv shell pyenv368'
+
+# Deactivating pyenv.
+alias pyenvdeact='pyenv shell system'
 
 # Starts Python3 http server at port 8000
 alias pyserver3='python3 -m http.server 8000'
